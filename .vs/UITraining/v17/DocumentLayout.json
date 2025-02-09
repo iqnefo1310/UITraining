@@ -1,0 +1,93 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\HP\\Documents\\1.PEMOGRAMAN\\8. C# LANJUTAN\\PELATIHAN\\UITraining\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B01F0E7A-F86E-491A-88C8-DD8229958016}|UITraining.csproj|c:\\users\\hp\\documents\\1.pemograman\\8. c# lanjutan\\pelatihan\\uitraining\\controllers\\privacycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B01F0E7A-F86E-491A-88C8-DD8229958016}|UITraining.csproj|solutionrelative:controllers\\privacycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B01F0E7A-F86E-491A-88C8-DD8229958016}|UITraining.csproj|c:\\users\\hp\\documents\\1.pemograman\\8. c# lanjutan\\pelatihan\\uitraining\\views\\privacy\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B01F0E7A-F86E-491A-88C8-DD8229958016}|UITraining.csproj|solutionrelative:views\\privacy\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B01F0E7A-F86E-491A-88C8-DD8229958016}|UITraining.csproj|c:\\users\\hp\\documents\\1.pemograman\\8. c# lanjutan\\pelatihan\\uitraining\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B01F0E7A-F86E-491A-88C8-DD8229958016}|UITraining.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B01F0E7A-F86E-491A-88C8-DD8229958016}|UITraining.csproj|c:\\users\\hp\\documents\\1.pemograman\\8. c# lanjutan\\pelatihan\\uitraining\\views\\privacy\\view.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B01F0E7A-F86E-491A-88C8-DD8229958016}|UITraining.csproj|solutionrelative:views\\privacy\\view.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PrivacyController.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Documents\\1.PEMOGRAMAN\\8. C# LANJUTAN\\PELATIHAN\\UITraining\\Controllers\\PrivacyController.cs",
+              "RelativeDocumentMoniker": "Controllers\\PrivacyController.cs",
+              "ToolTip": "C:\\Users\\HP\\Documents\\1.PEMOGRAMAN\\8. C# LANJUTAN\\PELATIHAN\\UITraining\\Controllers\\PrivacyController.cs",
+              "RelativeToolTip": "Controllers\\PrivacyController.cs",
+              "ViewState": "AQIAAB8AAAAAAAAAAAAkwCgAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-09T08:15:35.146Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "View.cshtml",
+              "DocumentMoniker": "C:\\Users\\HP\\Documents\\1.PEMOGRAMAN\\8. C# LANJUTAN\\PELATIHAN\\UITraining\\Views\\Privacy\\View.cshtml",
+              "RelativeDocumentMoniker": "Views\\Privacy\\View.cshtml",
+              "ToolTip": "C:\\Users\\HP\\Documents\\1.PEMOGRAMAN\\8. C# LANJUTAN\\PELATIHAN\\UITraining\\Views\\Privacy\\View.cshtml",
+              "RelativeToolTip": "Views\\Privacy\\View.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-09T08:24:20.17Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\HP\\Documents\\1.PEMOGRAMAN\\8. C# LANJUTAN\\PELATIHAN\\UITraining\\Views\\Privacy\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Privacy\\Index.cshtml",
+              "ToolTip": "C:\\Users\\HP\\Documents\\1.PEMOGRAMAN\\8. C# LANJUTAN\\PELATIHAN\\UITraining\\Views\\Privacy\\Index.cshtml",
+              "RelativeToolTip": "Views\\Privacy\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-09T08:25:55.68Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\HP\\Documents\\1.PEMOGRAMAN\\8. C# LANJUTAN\\PELATIHAN\\UITraining\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\HP\\Documents\\1.PEMOGRAMAN\\8. C# LANJUTAN\\PELATIHAN\\UITraining\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABwAAACAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-09T08:19:39.937Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
