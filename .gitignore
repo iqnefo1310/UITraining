@@ -1,0 +1,16 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/wwwroot/assets
+/.vs/UITraining/DesignTimeBuild/.dtbcache.v2
+/.vs/UITraining/FileContentIndex/0d35766a-1e76-4a58-98b1-9021cd442ab6.vsidx
+/.vs/UITraining/FileContentIndex/38b85a03-95c9-405d-8b8f-526901931b39.vsidx
+/.vs/UITraining/FileContentIndex/5e1a225b-3250-42bf-8216-c6f813c3c502.vsidx
+*.vsidx
+/.vs/UITraining/FileContentIndex/8bd99dc4-4b3a-46e3-8c84-39765c3aea4b.vsidx
+/.vs/UITraining/FileContentIndex/bfe8005a-9ea9-45a8-ad6c-7fa2536964c1.vsidx
+/.vs/UITraining/FileContentIndex/e0d6b6b5-e6c4-4909-ae60-50bf2263d8ef.vsidx
+/.vs/UITraining/FileContentIndex/c8a804a5-72af-4c99-8935-87030344350b.vsidx
+/.vs/UITraining/v17/.suo
+/.vs/UITraining/v17/DocumentLayout.json
