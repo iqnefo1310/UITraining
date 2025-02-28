@@ -2,6 +2,7 @@
 using UITraining.Interfaces;
 using UITraining.Models;
 using UITraining.Models.Db;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace UITraining.Services
 {
@@ -12,7 +13,6 @@ namespace UITraining.Services
         {
             _context = context;
         }
-
         public List<Product> GetProduct()
         {
             var data = _context.Products
@@ -24,11 +24,11 @@ namespace UITraining.Services
                     Description = x.Description,
                     Price = x.Price,
                     Stock = x.Stock,
+                    ProductStatus = x.ProductStatus
                 }).ToList();
 
             return data;
         }
-
         public Product GetProductbyId(int id)
         {
             var product = _context.Products
@@ -39,7 +39,6 @@ namespace UITraining.Services
             }
             return product;
         }
-
         public bool EditProduct(Product product)
         {
             var data = _context.Products.FirstOrDefault(x => x.Id == product.Id);
@@ -65,7 +64,9 @@ namespace UITraining.Services
                 var dataBarang = _context.Products.FirstOrDefault(x => x.Id == id);
                 if (dataBarang != null)
                 {
-                    _context.Products.Remove(dataBarang);
+                    dataBarang.ProductStatus = ProductStatus.deleted;
+
+                    _context.Products.Update(dataBarang);
                     _context.SaveChanges();
 
                     return true;
@@ -77,6 +78,5 @@ namespace UITraining.Services
                 throw;
             }
         }
-
     }
 }
