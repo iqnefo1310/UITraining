@@ -1,12 +1,12 @@
 ﻿using static UITraining.Models.GeneralStatus;
-namespace UITraining.Models.Db
+
+namespace UITraining.Models.DTO
 {
-    public class Supplier
+    public class SupplierDTO
     {
         public int Id { get; set; }
         public string SupplierName { get; set; }
         public string SupplierAddress { get; set; }
         public GeneralStatusData SupplierStatus { get; set; }
-        public ICollection<Product> Products { get; set;} = new List<Product>();
     }
 }
