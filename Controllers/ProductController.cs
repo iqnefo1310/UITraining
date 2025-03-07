@@ -3,15 +3,17 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using UITraining.Interfaces;
 using UITraining.Models.Db;
+using UITraining.Models.DTO;
 
 namespace UITraining.Controllers
 {
     public class ProductController : Controller
     {
         private readonly IProduct _interface;
-
-        public ProductController (IProduct interfaces)
+        private readonly ISupplier _supplier;
+        public ProductController(IProduct interfaces, ISupplier supplier)
         {
+            _supplier = supplier;
             _interface = interfaces;
         }
         // GET: ProductController
@@ -22,16 +24,28 @@ namespace UITraining.Controllers
         }
         public IActionResult Edit(int Id)
         {
+            ViewBag.Supplier = _supplier.Suppliers();
             var products = _interface.GetProductbyId(Id);
             return View(products);
         }
         [HttpPost]
-        public IActionResult Edit(Product product)
+        public IActionResult Edit(ProductDTO product)
         {
-            var Editproduct = _interface.EditProduct(product);
-            if (Editproduct)
+            if (product.Id == 0)
             {
-                return RedirectToAction(nameof(Index));
+                var addProduct = _interface.AddProduct(product);
+                if (addProduct)
+                {
+                    return RedirectToAction(nameof(Index));
+                }
+            }
+            else
+            {
+                var Editproduct = _interface.EditProduct(product);
+                if (Editproduct)
+                {
+                    return RedirectToAction(nameof(Index));
+                }
             }
             return View();
         }

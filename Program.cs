@@ -25,6 +25,7 @@ builder.Services.AddDbContext<ApplicationContext>(
 
 // 3. Menambahkan layanan ProductServices ke DI container.
 builder.Services.AddScoped<IProduct,ProductServices>();
+builder.Services.AddScoped<ISupplier,SupplierServices>();
 
 // 4. Setelah semua layanan didaftarkan, barulah memanggil Build() untuk membuat aplikasi.
 var app = builder.Build();

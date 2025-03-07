@@ -11,8 +11,8 @@ using UITraining.Models;
 namespace UITraining.Migrations
 {
     [DbContext(typeof(ApplicationContext))]
-    [Migration("20250215095221_TambahProdukDb")]
-    partial class TambahProdukDb
+    [Migration("20250302034341_tambahTableBaru")]
+    partial class tambahTableBaru
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -36,6 +36,9 @@ namespace UITraining.Migrations
                         .IsRequired()
                         .HasColumnType("longtext");
 
+                    b.Property<int>("IdSupplier")
+                        .HasColumnType("int");
+
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("longtext");
@@ -43,15 +46,54 @@ namespace UITraining.Migrations
                     b.Property<int>("Price")
                         .HasColumnType("int");
 
-                    b.Property<int>("Stock")
+                    b.Property<int>("ProductStatus")
                         .HasColumnType("int");
 
-                    b.Property<int>("isActive")
+                    b.Property<int>("Stock")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
 
+                    b.HasIndex("IdSupplier");
+
                     b.ToTable("Products");
+                });
+
+            modelBuilder.Entity("UITraining.Models.Db.Supplier", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("SupplierAddress")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("SupplierName")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Suppliers");
+                });
+
+            modelBuilder.Entity("UITraining.Models.Db.Product", b =>
+                {
+                    b.HasOne("UITraining.Models.Db.Supplier", "Supplier")
+                        .WithMany("Products")
+                        .HasForeignKey("IdSupplier")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Supplier");
+                });
+
+            modelBuilder.Entity("UITraining.Models.Db.Supplier", b =>
+                {
+                    b.Navigation("Products");
                 });
 #pragma warning restore 612, 618
         }

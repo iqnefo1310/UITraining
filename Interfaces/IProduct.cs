@@ -1,14 +1,17 @@
 ﻿using UITraining.Models.Db;
+using UITraining.Models.DTO;
 
 namespace UITraining.Interfaces
 {
     public interface IProduct
     {
-        List<Product> GetProduct();
+        List<ProductDTO> GetProduct();
         public Product GetProductbyId(int id);
 
-        public bool EditProduct(Product product);
+        public bool EditProduct(ProductDTO product);
         public bool Delete(int id);
+
+        public bool AddProduct(ProductDTO product);
 
     }
 
