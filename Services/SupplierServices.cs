@@ -20,7 +20,7 @@ namespace UITraining.Services
         public List<SelectListItem> Suppliers()
         {
             var datas = _context.Suppliers
-                .Select(x => new SelectListItem
+                .Where(x=> x.SupplierStatus != GeneralStatusData.inactive && x.SupplierStatus == GeneralStatusData.active).Select(x => new SelectListItem
                 {
                     Text = x.SupplierName,
                     Value = x.Id.ToString(),
@@ -31,7 +31,6 @@ namespace UITraining.Services
         {
             var data = _context.Suppliers
                 //.Include(y => y.Supplier)
-                .Where(x => x.SupplierStatus != GeneralStatusData.suspended)
                 .Select(x => new SupplierDTO
                 {
                     Id = x.Id,

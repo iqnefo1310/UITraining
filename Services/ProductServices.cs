@@ -54,7 +54,6 @@ namespace UITraining.Services
             data.Name = product.Name;
             data.Description = product.Description;
             data.Price = product.Price;
-            data.IdSupplier = product.IdSupplier;
 
             data.Stock = product.Stock;
             data.ProductStatus = product.ProductStatus;

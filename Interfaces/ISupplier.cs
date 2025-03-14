@@ -12,8 +12,5 @@ namespace UITraining.Interfaces
         public bool EditSupplier(SupplierDTO supplier);
         public bool AddSupplier(SupplierDTO supplier);
         public bool Delete(int id);
-
-        /*public SupplierDTO GetSupplierById(int id);*/
-
     }
 }

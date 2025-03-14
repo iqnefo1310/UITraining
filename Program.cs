@@ -26,6 +26,7 @@ builder.Services.AddDbContext<ApplicationContext>(
 // 3. Menambahkan layanan ProductServices ke DI container.
 builder.Services.AddScoped<IProduct,ProductServices>();
 builder.Services.AddScoped<ISupplier,SupplierServices>();
+builder.Services.AddScoped<IUserAccess,UserAccessServices>();
 
 // 4. Setelah semua layanan didaftarkan, barulah memanggil Build() untuk membuat aplikasi.
 var app = builder.Build();
@@ -47,6 +48,5 @@ app.UseAuthorization();
 // Pengaturan rute default.
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Dashboard}/{action=Index}/{id?}");
-
+pattern: "{controller=UserAccess}/{action=RegisterUser}/{id?}");
 app.Run();

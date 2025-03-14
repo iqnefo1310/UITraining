@@ -51,7 +51,5 @@ namespace UITraining.Controllers
             _supplier.Delete(id);
             return RedirectToAction("Index");
         }
-
-
     }
 }
